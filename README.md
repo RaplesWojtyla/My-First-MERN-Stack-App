@@ -1,4 +1,4 @@
-# MyFirstMERNStackProject
+# My First MERN Stack Project
 
 This is a MERN stack project that includes MongoDB, Express.js, React, and Node.js.
 
@@ -26,9 +26,18 @@ Make sure you have the following installed on your machine:
     npm install
     ```
 
+### Configuration
+1. Copy the .env.example file into .env
+   ```bash
+   cp .env.example .env
+   ```
+2. Change ```<YourMongoDBConnectionString>``` to your mongodb connection string
+   ```bash
+   MONGO_URI=<YourMongoDBConnectionString>
+   ```
 ### Running the Project
 
-1. Start the server:
+1. Start the app:
     ```bash
     npm run dev
     ```
