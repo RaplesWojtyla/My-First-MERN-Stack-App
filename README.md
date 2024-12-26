@@ -19,7 +19,7 @@ Make sure you have the following installed on your machine:
     ```
 2. Navigate to the project directory:
     ```bash
-    cd path/to-the/destination/directory
+    cd path/to-the/project/directory
     ```
 3. Install the dependencies for both the server and client:
     ```bash
