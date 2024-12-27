@@ -1,30 +1,15 @@
 # My First MERN Stack Project
 
-This is a MERN stack project that includes MongoDB, Express.js, React, and Node.js.
+This is a simple CRUD MERN stack project that includes MongoDB, Express.js, React, and Node.js. 
 
 ## Getting Started
 
 ### Prerequisites
 
 Make sure you have the following installed on your machine:
-- Node.js
-- npm (Node Package Manager)
-- MongoDB
+- Node.js (>= v18.18.1)
+- MongoDB (Optional)
 
-### Installation
-
-1. Clone the repository using HTTPS:
-    ```bash
-    git clone https://github.com/RaplesWojtyla/My-First-MERN-Stack-App.git
-    ```
-2. Navigate to the project directory:
-    ```bash
-    cd path/to-the/project/directory
-    ```
-3. Install the dependencies for both the server and client:
-    ```bash
-    npm install
-    ```
 
 ### Configuration
 1. Copy the .env.example file into .env
@@ -35,11 +20,41 @@ Make sure you have the following installed on your machine:
    ```bash
    MONGO_URI=<YourMongoDBConnectionString>
    ```
-### Running the Project
 
-1. Start the app:
+### Installation (For Development)
+
+1. Install the dependencies for app/server:
+    ```bash
+    npm install
+    ```
+
+2. Install the dependencies for client:
+    ```bash
+    cd ./frontend
+    npm install
+    ```
+
+### Running the Project (For Development)
+
+1. Start the app/server:
     ```bash
     npm run dev
+    ```
+2. Start the client
+    ```bash
+    cd ./frontend
+    npm run dev
+    ```
+
+### Deployment (For Production)
+
+1. Build the app & client:
+    ```bash
+    npm run build
+    ```
+2. Start the app in production mode:
+    ```bash
+    npm start
     ```
 
 ### Project Structure
