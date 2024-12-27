@@ -59,5 +59,27 @@ export const useProductStore = create((set) => ({
 			success: data.success,
 			message: data.message
 		};
+	},
+	updateProduct: async (id, updatedProduct) => {
+		const res = await fetch(`/api/products/update/${id}`, {
+			method: 'PUT',
+			headers: {
+				'Content-Type': 'application/json'
+			},
+			body: JSON.stringify(updatedProduct)
+		});
+
+		const data = await res.json();
+
+		if (data.success) {
+			set(state => ({
+				products: state.products.map(product => product._id === id ? data.data : product)
+			}))
+		}
+
+		return {
+			success: data.success,
+			message: data.message || "Product Updated Successfully!"
+		}
 	}
 }));
