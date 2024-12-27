@@ -29,8 +29,8 @@ export const useProductStore = create((set) => ({
 		}));
 
 		return {
-			success: true,
-			message: "Produk berhasil ditambahkan."
+			success: data.success,
+			message: data.message || "Produk berhasil ditambahkan."
 		}
 	}
 }));
