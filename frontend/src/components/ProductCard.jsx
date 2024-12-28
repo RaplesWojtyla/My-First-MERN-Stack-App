@@ -83,7 +83,7 @@ function ProductCard({ product }) {
 					<ModalOverlay />
 
 					<ModalContent>
-						<ModalHeader>Add Product</ModalHeader>
+						<ModalHeader>Update Product</ModalHeader>
 						<ModalCloseButton />
 
 						<ModalBody pb={6}>
