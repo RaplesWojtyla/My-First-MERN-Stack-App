@@ -38,6 +38,7 @@ Make sure you have the following installed on your machine:
 
 1. Start the app/server:
     ```bash
+    cd ./backend
     npm run dev
     ```
 2. Start the client
